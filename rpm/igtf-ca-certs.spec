@@ -154,7 +154,7 @@ sha256sum -c cacerts_sha256sum.txt
 * Tue Feb 07 2017 Edgar Fajardo <emfajard@ucsd.edu> 1.79-2
 - Added check for md5 checksums of the certificates (SOFTWARE-2590)
 
-* Mon Jan 11 2017 Zalak Shah <zsshah@iu.edu> 1.79-1
+* Wed Jan 11 2017 Zalak Shah <zsshah@iu.edu> 1.79-1
 - CA release corresponding to IGTF 1.79 release.
 
 * Thu Oct 13 2016 Anand Padmanabhan <apadmana@illinois.edu> 1.78-1
@@ -255,7 +255,7 @@ sha256sum -c cacerts_sha256sum.txt
 * Tue Dec 18 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.51-4
 - CA release corresponding to IGTF 1.51 release (ITB) + DOEGrids sha2
 
-* Mon Dec 07 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.51-3
+* Fri Dec 07 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.51-3
 - CA release corresponding to IGTF 1.51 release 
 
 * Mon Dec 03 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.51-2
@@ -273,7 +273,7 @@ sha256sum -c cacerts_sha256sum.txt
 * Tue Aug 07 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.49-1
 - CA release corresponding to IGTF 1.49
 
-* Fri Jun 11 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.48-2
+* Mon Jun 11 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.48-2
 - CA release corresponding to IGTF 1.48
 
 * Fri May 25 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.48-1
@@ -282,26 +282,26 @@ sha256sum -c cacerts_sha256sum.txt
 * Mon May 07 2012 Kevin Hill <kevinh@fnal.gov> - 1.47-1
 - CA release corresponding to IGTF 1.47 release
 
-* Thu Mar 30 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.46-1
+* Fri Mar 30 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.46-1
 - CA release corresponding to IGTF 1.46 release
 - Note version 1.45 is skipped since IGTF released 1.46 immediately due to problem with CRL from CESNET CA
 
-* Thu Jan 18 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.44-1
+* Wed Jan 18 2012 Anand Padmanabhan <apadmana@uiuc.edu> - 1.44-1
 - CA release corresponding to IGTF 1.44 release
 
-* Thu Nov 30 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.43-1
+* Wed Nov 30 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.43-1
 - CA release corresponding to IGTF 1.43
 
-* Thu Nov 28 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.42-3
+* Mon Nov 28 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.42-3
 - use mv instead of install to maintain symlink
 
-* Thu Oct 11 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.42-1
+* Tue Oct 11 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.42-1
 - New CA release
 
-* Thu Sep 27 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.41-1
+* Tue Sep 27 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.41-1
 - New CA release
 
-* Thu Sep 9 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.40-6
+* Fri Sep 09 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.40-6
 - Added osg-ca-certs-experimental in Obsoletes line
 
 * Thu Sep 8 2011 Anand Padmanabhan <apadmana@uiuc.edu> - 1.40-5
