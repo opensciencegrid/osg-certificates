@@ -17,7 +17,6 @@ Source2:        https://github.com/cilogon/letsencrypt-certificates/archive/mast
 BuildArch:      noarch
 
 BuildRequires:  openssl
-BuildRequires:  curl
 
 Provides:       grid-certificates = 7
 
