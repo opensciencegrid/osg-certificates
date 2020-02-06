@@ -1,18 +1,20 @@
 %define igtf_version 1.104
 %define osg_version  1.86
+%define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
 Release:        2%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
-
 License:        Unknown
 URL:            http://repo.opensciencegrid.org/cadist/
 
-Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{osg_version}/osg-certificates-%{osg_version}.tar.gz
+Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
 Source2:        https://github.com/cilogon/letsencrypt-certificates/archive/master/letsencrypt-certificates.tar.gz
+# can obtain latest letsencrypt-certificates.tar.gz with a github.source line:
+# type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
 
 BuildArch:      noarch
 
@@ -30,9 +32,9 @@ Obsoletes:      osg-ca-certs-compat <= 1:1.37
 For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
 
 %prep
-%setup -n osg-certificates-%{osg_version}
-%setup -D -n osg-certificates-%{osg_version} -a 1
-%setup -D -n osg-certificates-%{osg_version} -a 2
+%setup    -n osg-certificates-%{vtag}
+%setup -D -n osg-certificates-%{vtag} -a 1
+%setup -D -n osg-certificates-%{vtag} -a 2
 
 %build
 export IGTF_CERTS_VERSION=%{igtf_version}

@@ -1,5 +1,6 @@
 %define igtf_version 1.104
 %define osg_version  1.86
+%define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           igtf-ca-certs
 Version:        %{igtf_version}
@@ -9,7 +10,7 @@ Summary:        OSG Packaging of the IGTF CA Certs, in the OpenSSL 1.0.* format.
 License:        Unknown
 URL:            http://repo.opensciencegrid.org/cadist/
 
-Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{osg_version}/osg-certificates-%{osg_version}.tar.gz
+Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
 
 BuildArch:      noarch
@@ -28,8 +29,8 @@ Obsoletes:      igtf-ca-certs-compat <= 1.55
 For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
 
 %prep
-%setup -n osg-certificates-%{osg_version}
-%setup -D -n osg-certificates-%{osg_version} -a 1
+%setup    -n osg-certificates-%{vtag}
+%setup -D -n osg-certificates-%{vtag} -a 1
 
 %build
 export IGTF_CERTS_VERSION=%{igtf_version}
