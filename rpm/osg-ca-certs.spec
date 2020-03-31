@@ -1,10 +1,10 @@
-%define igtf_version 1.104
-%define osg_version  1.86
+%define igtf_version 1.105
+%define osg_version  1.87
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Mar 30 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.87-1
+- Update to IGTF 1.105 (SOFTWARE-4046)
+
 * Thu Feb 06 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.86-2
 - Revamp build process (SOFTWARE-3977)
 
