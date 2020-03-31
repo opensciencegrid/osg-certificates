@@ -8,6 +8,14 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.87 ===========
+Built 31 MAR 2020
+* Discontinued CERN-LCG-IOTA-CA following decommissioning by authority (CERN)
+* Added new G4 intermediates for the GEANT TCS service and supporting
+  self-signed USERTrust RSA Root (EU)
+* Updated AddTrust External CA Root signing policy to support legacy UTN
+  chains for GEANT TCS G4 (EU)
+
 ===== Version 1.86 ===========
 Built 29 JAN 2020
 * Reinstated AddTrust External CA Root (US)
