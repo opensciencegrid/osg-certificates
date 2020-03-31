@@ -1,0 +1,65 @@
+
+Updating IGTF version:
+
+- Find and download the latest igtf-policy-installation-bundle-<IGTF_VER>.tar.gz
+  from https://dist.eugridpma.info/distribution/igtf/current/
+
+- copy this igtf bundle tarball to the upstream area:
+  igtf-policy-installation-bundle/<IGTF_VER>/igtf-policy-installation-bundle-<IGTF_VER>.tar.gz
+
+- update {igtf,osg}-ca-certs/upstream/igtf.upstream.source in packaging with
+  this new tarball + checksum
+
+- inside new igtf bundle, get changes from CHANGES for the latest igtf release,
+  add these changes to CHANGES here, in osg-certificates
+
+- bump the igtf_version and osg_version in rmp/{igtf,osg}-ca-certs.spec,
+  add changelog entries
+
+- commit osg-certificates changes and tag v<OSG_VER>.igtf.<IGTF_VER>;
+  push changes to opensciencegrid/osg-certificates (push master and new tag)
+  
+- update {igtf,osg}-ca-certs/upstream/osg-certificates.github.source in
+  packaging; bump all occurances of OSG_VER and IGTF_VER, and update 'hash'
+  to match the new tagged commit.
+
+  NOTE: the 'name' parameter in osg-certificates.github.source matches the
+  package name, {igtf,osg}-ca-certs, respectively.
+
+
+Making OSG changes:
+
+All OSG-specific stuff is done in "build-certificates-dir.sh" in the block
+with the comment "OSG Specific stuff".
+
+Currently the only thing here is to add letsencrypt certs, but in theory
+other certs could be added or removed from here.
+
+
+Updating the letsencrypt tarball:
+
+It is not necessary to update the letsencrypt tarball every time, but if
+we want to update it we can as follows.
+
+As is documented in rpm/osg-ca-certs.spec, you can *obtain* the latest
+letsencrypt-certificates.tar.gz with a github.source line:
+
+  type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
+
+You can use the 'fetch-dot-source' util from osg-build to download this tarball.
+
+  $ cd /tmp
+  $ echo type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=... > letsencrypt.github.source
+  $ fetch-dot-source letsencrypt.github.source
+
+You may have to update the 'hash' parameter to match the current upstream
+master commit, or else run fetch-dot-source with the '-n' option to ignore
+a hash mismatch.
+
+Since this is an externally controlled repo, we want to keep this source in our
+upstream source cache.  So, after downloading a new letsencrypt tarball, copy
+it to our upstream source cache, and update the
+osg-ca-certs/upstream/letsencrypt.tarball.source appropriately:
+
+  letsencrypt-certificates/git_36f6703/letsencrypt-certificates.tar.gz sha1sum=9c936fb6b6141c038b0ef58e7982cf482dfe9026
+
