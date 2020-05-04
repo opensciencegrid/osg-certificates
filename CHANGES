@@ -8,6 +8,13 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.88 ===========
+Built 4 MAY 2020
+* Removed expiring AddTrust External CA Root (US)
+* Updated legacy DutchGrid (Nikhef MS) Root CA (NL)
+* Removed discontinued NCSA-tfca-2013 CA (US)
+* Added TCS G4 ECC trust anchors to experimental area (EU)
+
 ===== Version 1.87 ===========
 Built 31 MAR 2020
 * Discontinued CERN-LCG-IOTA-CA following decommissioning by authority (CERN)
