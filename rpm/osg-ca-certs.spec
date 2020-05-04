@@ -1,4 +1,4 @@
-%define igtf_version 1.105
+%define igtf_version 1.106
 %define osg_version  1.88
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
