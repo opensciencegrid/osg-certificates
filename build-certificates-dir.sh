@@ -2,7 +2,7 @@
 set -ex
 
 # expects from environment:
-#    CADIST, IGTF_CERTS_VERSION, OUR_CERTS_VERSION, PKG_NAME
+#   CADIST, IGTF_CERTS_VERSION, OSG_CERTS_VERSION, OUR_CERTS_VERSION, PKG_NAME
 
 mkdir "$CADIST"
 cp CHANGES "$CADIST"
@@ -23,7 +23,9 @@ if [[ $PKG_NAME = osg-ca-certs ]]; then
 fi
 
 ../mk-index.pl --version "$OUR_CERTS_VERSION" --dir "$CADIST" \
-                 --out "$CADIST/INDEX" -format 1 --style new
+               --out "$CADIST/INDEX" -format 1 --style new    \
+               --igtf_version "${IGTF_CERTS_VERSION}IGTFNEW"  \
+               --osg_version  "${OSG_CERTS_VERSION}NEW"
 
 cd "$CADIST"
 sha256sum *.0 *.pem > cacerts_sha256sum.txt

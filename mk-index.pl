@@ -30,10 +30,11 @@ use File::Basename;
 use File::Find;
 use Getopt::Long;
 
-my @keys = qw(dir out debug version ssl1 style format);
+my @keys = qw(dir out debug version ssl1 style format igtf_version osg_version);
 my %args;
 @args{@keys} = ("") x @keys;
-GetOptions(\%args,"out=s","dir=s","help+","debug+","version=s","ssl1=s","format=s","style=s");
+GetOptions(\%args,"out=s","dir=s","help+","debug+","version=s","ssl1=s","format=s","style=s",
+    "igtf_version=s","osg_version=s");
 
 my $castyle = "new";  # type of IGTF release layout
 my $IndexTypeVersion = 1; # INDEX.txt format number
@@ -172,6 +173,9 @@ while ( my $infofile = glob("$args{dir}/*.info") ) {
   }
 }
 
+my $OSG_VER = $args{osg_version};
+my $IGTF_VER = $args{igtf_version};
+
 my $title = "Contents of Certificate Package (version $args{version}) distributed by OSG Security team via the OSG GOC";
 my $header = "Contents of current OSG CACert Distribution (version $args{version})";
 open(OH,">","$args{out}.html") or die "Failed to open $args{out}.html for write";
@@ -188,8 +192,8 @@ print OH "provided by the OSG security team.\n";
 
 #[03/26/19]following lines of code will show the URLs for latest version of OSG and IGTF CA bundles 
 $args{version} =~ m{(\d+\.\d+)}; 
-print OH "<a href='http://repo.opensciencegrid.org/pacman/cadist/" . $1 . "IGTFNEW/osg-certificates-" . $1 . "IGTFNEW.tar.gz'>Latest IGTF CA bundle</a>\n";
-print OH "<a href='http://repo.opensciencegrid.org/pacman/cadist/" . $1 . "NEW/osg-certificates-" . $1 . "NEW.tar.gz'>Latest OSG CA bundle</a>\n";
+print OH "<a href='$IGTF_VER/osg-certificates-$IGTF_VER.tar.gz'>Latest IGTF CA bundle</a>\n";
+print OH "<a href='$OSG_VER/osg-certificates-$OSG_VER.tar.gz'>Latest OSG CA bundle</a>\n";
 
 #[03/26/19]information about non-IGTF CAs, i.e. Let's Encrypt
 print OH "OSG has included a non-IGTF CA (i.e. Let's Encrypt) in its CA distribution bundle.";
