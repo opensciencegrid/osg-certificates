@@ -16,8 +16,6 @@ make install
 if [[ $PKG_NAME = osg-ca-certs ]]; then
   # OSG Specific stuff
   cd ../letsencrypt-certificates
-  sed -i 's/\.txt//g' Makefile
-  for x in *.txt; do mv "$x" "${x%.txt}"; done
   make check
   mv *.0 *.signing_policy *.pem *.crl_url "$CADIST"
 fi
