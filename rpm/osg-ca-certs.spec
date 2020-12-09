@@ -1,5 +1,5 @@
 %define igtf_version 1.107
-%define osg_version  1.89
+%define osg_version  1.90
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -12,7 +12,7 @@ URL:            http://repo.opensciencegrid.org/cadist/
 
 Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
-Source2:        https://github.com/cilogon/letsencrypt-certificates/archive/master/letsencrypt-certificates.tar.gz
+Source2:        https://github.com/brianhlin/letsencrypt-certificates/archive/7d89386f51e830a638798f3c6c5c0375be96d20c/letsencrypt-certificates.tar.gz
 # can obtain latest letsencrypt-certificates.tar.gz with a github.source line:
 # type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
 
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Wed Dec 9 2020 Brian Lin <blin@cs.wisc.edu> - 1.90-1
+- Add new Let's Encrypt intermediate certificates (SOFTWARE-4387)
+
 * Mon Aug 10 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.89-1
 - Update to IGTF 1.107 (SOFTWARE-4215)
 
