@@ -1,5 +1,5 @@
-%define igtf_version 1.107
-%define osg_version  1.90
+%define igtf_version 1.108
+%define osg_version  1.91
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Dec 14 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.91-1
+- Update to IGTF 1.108 (SOFTWARE-4395)
+
 * Wed Dec 9 2020 Brian Lin <blin@cs.wisc.edu> - 1.90-1
 - Add new Let's Encrypt intermediate certificates (SOFTWARE-4387)
 

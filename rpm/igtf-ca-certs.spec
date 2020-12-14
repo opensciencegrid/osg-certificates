@@ -1,5 +1,5 @@
-%define igtf_version 1.107
-%define osg_version  1.89
+%define igtf_version 1.108
+%define osg_version  1.91
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           igtf-ca-certs
@@ -56,6 +56,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Dec 14 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.108-1
+- Update to IGTF 1.108 (SOFTWARE-4395)
+
 * Mon Aug 10 2020 Carl Edquist <edquist@cs.wisc.edu> - 1.107-1
 - Update to IGTF 1.107 (SOFTWARE-4215)
 
