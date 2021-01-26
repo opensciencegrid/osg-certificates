@@ -12,7 +12,7 @@ URL:            http://repo.opensciencegrid.org/cadist/
 
 Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
-Source2:        https://github.com/brianhlin/letsencrypt-certificates/archive/7d89386f51e830a638798f3c6c5c0375be96d20c/letsencrypt-certificates.tar.gz
+Source2:        https://github.com/cilogon/letsencrypt-certificates/archive/master/letsencrypt-certificates.tar.gz
 # can obtain latest letsencrypt-certificates.tar.gz with a github.source line:
 # type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
 
