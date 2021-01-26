@@ -8,3 +8,4 @@ set -e
 curl -O https://letsencrypt.org/certs/isrgrootx1.pem
 curl -O https://letsencrypt.org/certs/letsencryptauthorityx3.pem
 curl -O https://letsencrypt.org/certs/letsencryptauthorityx4.pem
+curl -O https://letsencrypt.org/certs/trustid-x3-root.pem
