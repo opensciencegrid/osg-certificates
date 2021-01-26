@@ -1,5 +1,5 @@
 %define igtf_version 1.109
-%define osg_version  1.92
+%define osg_version  1.93
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Tue Jan 26 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.93-1
+- Add DST Root CA X3 Let's Encrypt root cert (SOFTWARE-4436)
+
 * Tue Jan 19 2021 Brian Lin  <blin@cs.wisc.edu> - 1.92-1
 - Update to IGTF 1.109 (SOFTWARE-4427)
 
