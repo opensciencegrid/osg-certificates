@@ -1,10 +1,10 @@
 %define igtf_version 1.109
-%define osg_version  1.93
+%define osg_version  1.94
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Wed Jan 27 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.94-1
+- Bundle letsencrypt-certificates/lets-encrypt-r{3,4}.pem (SOFTWARE-4436)
+
 * Wed Jan 27 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.93-2
 - Rebuild with letsencrypt-certificates v0.3.1 (SOFTWARE-4436)
 
