@@ -4,7 +4,7 @@
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Wed Jan 27 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.93-2
+- Rebuild with letsencrypt-certificates v0.3.1 (SOFTWARE-4436)
+
 * Tue Jan 26 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.93-1
 - Add DST Root CA X3 Let's Encrypt root cert (SOFTWARE-4436)
 
