@@ -1,5 +1,5 @@
-%define igtf_version 1.109
-%define osg_version  1.94
+%define igtf_version 1.110
+%define osg_version  1.95
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Wed Apr 28 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.95-1
+- Update to IGTF 1.110 (SOFTWARE-4587)
+
 * Wed Jan 27 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.94-1
 - Bundle letsencrypt-certificates/lets-encrypt-r{3,4}.pem (SOFTWARE-4436)
 
