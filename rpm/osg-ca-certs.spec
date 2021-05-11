@@ -1,5 +1,5 @@
 %define igtf_version 1.110
-%define osg_version  1.95
+%define osg_version  1.96
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -12,7 +12,7 @@ URL:            http://repo.opensciencegrid.org/cadist/
 
 Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
-Source2:        https://github.com/cilogon/letsencrypt-certificates/archive/master/letsencrypt-certificates.tar.gz
+Source2:        https://github.com/opensciencegrid/letsencrypt-certificates/archive/v0.3.2/letsencrypt-certificates.tar.gz
 # can obtain latest letsencrypt-certificates.tar.gz with a github.source line:
 # type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
 
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon May 10 2021 Brian Lin <blin@cs.wisc.edu> - 1.96-1
+- Add missing ISRG Root X1 to the DST Root CA X3 signing policy (SOFTWARE-4613)
+
 * Wed Apr 28 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.95-1
 - Update to IGTF 1.110 (SOFTWARE-4587)
 
