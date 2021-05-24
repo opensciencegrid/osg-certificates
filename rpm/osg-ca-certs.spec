@@ -1,5 +1,5 @@
-%define igtf_version 1.110
-%define osg_version  1.96
+%define igtf_version 1.111
+%define osg_version  1.97
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon May 24 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.97-1
+- Update to IGTF 1.111 (SOFTWARE-4631)
+
 * Mon May 10 2021 Brian Lin <blin@cs.wisc.edu> - 1.96-1
 - Add missing ISRG Root X1 to the DST Root CA X3 signing policy (SOFTWARE-4613)
 
