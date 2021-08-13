@@ -8,14 +8,64 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
-===== Version 1.88 ===========
+===== Version 1.98 (IGTF 1.112) ===========
+Built 13 AUG 2021
+* Updated ANSPGrid CA with extended validity date (BR)
+
+===== Version 1.97 (IGTF 1.111) ===========
+Built 24 MAY 2021
+* Removed discontinued NERSC-SLCS CA (US)
+* Removed discontinued MYIFAM CA (MY)
+
+===== Version 1.96 (IGTF 1.110) ===========
+Built 10 MAY 2021
+* Add missing ISRG Root X1 to the DST Root CA X3 signing policy
+
+===== Version 1.95 (IGTF 1.110) ===========
+Built 22 MAR 2021
+* Removed INFN-CA-2015 that has disappeared operationally (IT)
+
+===== Version 1.94 (IGTF 1.109) ===========
+Built 27 JAN 2021
+* Bundle letsencrypt-certificates/lets-encrypt-r{3,4}.pem
+
+===== Version 1.93-2 (IGTF 1.109) ===========
+Built 27 JAN 2021
+* Rebuild with letsencrypt-certificates v0.3.1
+
+===== Version 1.93 (IGTF 1.109) ===========
+Built 26 JAN 2021
+* Add DST Root CA X3 Let's Encrypt root cert
+
+===== Version 1.92 (IGTF 1.109) ===========
+Built 19 JAN 2021
+* Removed discontinued DM private IGTF classic CAs (AE)
+* Removed obsolete QuoVadis-Root-CA1, under which no ICAs are left (BM)
+* Updated QV Grid ICA G2 intermediary following its re-issuance (BM)
+
+===== Version 1.91 (IGTF 1.108) ===========
+Built 14 DEC 2020
+* Added DigitalTrust classic IGTF specific and public trust IGTF CAs (AE)
+* Updated PCS MyProxy SLCS CRL URL location (US)
+
+===== Version 1.90 (IGTF 1.107) ===========
+Built 9 DEC 2020
+* Add new Let's Encrypt intermediate certificates
+
+===== Version 1.89 (IGTF 1.107) ===========
+Built 10 AUG 2020
+* retired DarkMatterSecureCA and DarkMatterAssuredCA (AE)
+* removed superseded PolishGrid CA (PL)
+* Added TCS G4 ECC trust anchors to accredited set (EU)
+
+===== Version 1.88 (IGTF 1.106) ===========
 Built 4 MAY 2020
 * Removed expiring AddTrust External CA Root (US)
 * Updated legacy DutchGrid (Nikhef MS) Root CA (NL)
 * Removed discontinued NCSA-tfca-2013 CA (US)
 * Added TCS G4 ECC trust anchors to experimental area (EU)
 
-===== Version 1.87 ===========
+===== Version 1.87 (IGTF 1.105) ===========
 Built 31 MAR 2020
 * Discontinued CERN-LCG-IOTA-CA following decommissioning by authority (CERN)
 * Added new G4 intermediates for the GEANT TCS service and supporting
@@ -23,7 +73,7 @@ Built 31 MAR 2020
 * Updated AddTrust External CA Root signing policy to support legacy UTN
   chains for GEANT TCS G4 (EU)
 
-===== Version 1.86 ===========
+===== Version 1.86 (IGTF 1.104) ===========
 Built 29 JAN 2020
 * Reinstated AddTrust External CA Root (US)
 
