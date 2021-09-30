@@ -8,6 +8,10 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.99 (IGTF 1.112) ===========
+Built 29 SEP 2021
+* Remove expiring Let's Encrypt "DST Root X3 CA"
+
 ===== Version 1.98 (IGTF 1.112) ===========
 Built 13 AUG 2021
 * Updated ANSPGrid CA with extended validity date (BR)
