@@ -13,7 +13,7 @@ Updating IGTF version:
 - inside new igtf bundle, get changes from CHANGES for the latest igtf release,
   add these changes to CHANGES here, in osg-certificates
 
-- bump the igtf_version and osg_version in rmp/{igtf,osg}-ca-certs.spec,
+- bump the igtf_version and osg_version in rpm/{igtf,osg}-ca-certs.spec,
   add changelog entries
 
 - commit osg-certificates changes and tag v<OSG_VER>.igtf.<IGTF_VER>;
