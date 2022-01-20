@@ -1,5 +1,5 @@
 %define igtf_version 1.114
-%define osg_version  1.101
+%define osg_version  1.102
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,7 +60,10 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
-* Wed Jan 19 2022 Tim Theisen <tim@cs.wisc.edu> - 1.114-1
+* Wed Jan 19 2022 Tim Theisen <tim@cs.wisc.edu> - 1.102-1
+- SOFTWARE-4965: Completely removed expired Let's Encrypt ROOT CA X3
+
+* Wed Jan 19 2022 Tim Theisen <tim@cs.wisc.edu> - 1.101-1
 - Update to IGTF 1.114 (SOFTWARE-4965)
 
 * Mon Oct 04 2021 Carl Edquist <edquist@cs.wisc.edu> - 1.100-1

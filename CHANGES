@@ -8,6 +8,10 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.102 (IGTF 1.114) ===========
+Built 19 JAN 2022
+* SOFTWARE-4965: Completely remove expired Let's Encrypt ROOT CA X3
+
 ===== Version 1.101 (IGTF 1.114) ===========
 Built 19 JAN 2022
 * Extended validity for SlovakGrid issuing CA (SK)
