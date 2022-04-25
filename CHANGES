@@ -8,6 +8,10 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.106 (IGTF 1.116) ===========
+Built 25 APR 2022
+* Updated intermediate CERN Grid CA ICA with extended validity (CERN)
+
 ===== Version 1.105 (IGTF 1.115) ===========
 Built 30 MAR 2022
 * Removed obsolete CNRS2 CAs, superseded by AC-GRID-FR hierarchy (FR)

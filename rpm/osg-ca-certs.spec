@@ -1,5 +1,5 @@
-%define igtf_version 1.115
-%define osg_version  1.105
+%define igtf_version 1.116
+%define osg_version  1.106
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Apr 25 2022 Tim Theisen <tim@cs.wisc.edu> - 1.116-1
+- Update to IGTF 1.116 (SOFTWARE-5142)
+
 * Wed Mar 30 2022 Tim Theisen <tim@cs.wisc.edu> - 1.105-1
 - Update to IGTF 1.115 (SOFTWARE-5107)
 
