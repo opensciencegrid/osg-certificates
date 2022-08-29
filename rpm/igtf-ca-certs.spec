@@ -17,6 +17,10 @@ BuildArch:      noarch
 
 BuildRequires:  openssl
 
+BuildRequires:  perl(File::Basename)
+BuildRequires:  perl(File::Find)
+BuildRequires:  perl(Getopt::Long)
+
 Provides:       grid-certificates = 7
 
 Conflicts:      osg-ca-scripts
