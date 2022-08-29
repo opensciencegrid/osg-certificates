@@ -8,6 +8,13 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.107 (IGTF 1.117) ===========
+Built 29 AUG 2022
+* Add new intermediate ICA DigiCert Grid-TLS (US)
+* Add new intermediate ICA DigiCert Grid-Client-RSA2048-SHA256-2022-CA1 (US)
+* Removed discontinued NCSA-slcs-2013 following end of XSEDE (US)
+* Removed discontinued PSC-Myproxy-CA following end of XSEDE (US)
+
 ===== Version 1.106 (IGTF 1.116) ===========
 Built 25 APR 2022
 * Updated intermediate CERN Grid CA ICA with extended validity (CERN)
