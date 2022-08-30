@@ -1,5 +1,5 @@
 %define igtf_version 1.117
-%define osg_version  1.107
+%define osg_version  1.109
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           osg-ca-certs
