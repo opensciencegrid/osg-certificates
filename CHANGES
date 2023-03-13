@@ -8,6 +8,17 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.110 (IGTF 1.119) ===========
+Built 13 MAR 2023
+* Updated UKeScience Root (2007) wih consistent string encodings (UK)
+* Removed obsolete SHA1 subordinates DigiCertGridTrustCA-Classic
+  and DigiCertGridCA-1-Classic from DigiCert, reflected in RPDNC namespaces
+* Experimental (non-accredited) new InCommon RSA IGTF Server CA 2 (ICA under
+  Sectigo USERTrust RSA root, for which namespaces have been updated) (US)
+* Updated GridCanada CA with re-issued SHA-2 based root (CA)
+* Updated CILogon basic, silver, and openid with re-issued SHA-2 certs (US)
+* Updated UKeScience Root (2007) re-issued with SHA-2, retired 2A ICA (UK)
+
 ===== Version 1.107 (IGTF 1.117) ===========
 Built 29 AUG 2022
 * Add new intermediate ICA DigiCert Grid-TLS (US)
