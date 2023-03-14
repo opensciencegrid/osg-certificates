@@ -63,6 +63,9 @@ sha256sum -c cacerts_sha256sum.txt
 * Mon Mar 13 2023 Tim Theisen <tim@cs.wisc.edu> - 1.119-1
 - Update to IGTF 1.119 (SOFTWARE-5524)
 
+* Thu Jan 26 2023 Carl Edquist <edquist@cs.wisc.edu> - 1.117-1.1
+- Bump to rebuild (SOFTWARE-5457)
+
 * Mon Aug 29 2022 Tim Theisen <tim@cs.wisc.edu> - 1.117-1
 - Update to IGTF 1.117 (SOFTWARE-5309)
 
