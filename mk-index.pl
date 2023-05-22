@@ -59,8 +59,7 @@ if ( $IndexTypeVersion < 0 || $IndexTypeVersion > 1 ) {
 if ( $args{ssl1} ) {
   $ssl1bin = $args{ssl1};
 }
-my @sslcheck = split(' ',`$ssl1bin version`);
-if ( index($sslcheck[1],'1') != 0 ) { print "missing openssl 1.x\n"; usage(); exit; }
+system("$ssl1bin version >/dev/null") == 0 or die "openssl binary not found at $ssl1bin";
 
 ######################################################################
 ###### declare functions ############################################
