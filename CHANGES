@@ -8,6 +8,12 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.111 (IGTF 1.120) ===========
+Built 31 MAY 2023
+* Added transitional CDP mirror URLs for retiring DigitalTrust CAs (AE)
+* Removed discontinued NIIF-Root-CA-2 (HU)
+* Removed expiring GermanGrid (GridKA CrossGrid) CA (DE)
+
 ===== Version 1.110 (IGTF 1.119) ===========
 Built 13 MAR 2023
 * Updated UKeScience Root (2007) wih consistent string encodings (UK)
