@@ -8,6 +8,11 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+===== Version 1.112 (IGTF 1.121) ===========
+Built 16 JUN 2023
+* Added accredited (classic) InCommon RSA IGTF Server CA 3 under the
+  Sectigo USERTrust RSA root, for which namespaces have been updated (US)
+
 ===== Version 1.111 (IGTF 1.120) ===========
 Built 31 MAY 2023
 * Added transitional CDP mirror URLs for retiring DigitalTrust CAs (AE)
