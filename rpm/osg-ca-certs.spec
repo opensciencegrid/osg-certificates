@@ -4,7 +4,7 @@
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
