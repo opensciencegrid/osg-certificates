@@ -8,6 +8,12 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
 
+
+===== Version 1.114 (IGTF 1.123) ===========
+Built 6 SEPT 2023
+* Add ECC private trust hierarchy for GEANT (Research and Education) TCS (EU) 
+* Added accredited private trust eMudhra IGTF root and issuers (IN)
+
 ===== Version 1.113 (IGTF 1.122) ===========
 Built 7 AUG 2023
 * Added private trust hierarchy for GEANT (Research and Education) TCS (EU)
