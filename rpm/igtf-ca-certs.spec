@@ -1,5 +1,5 @@
-%define igtf_version 1.122
-%define osg_version  1.113
+%define igtf_version 1.123
+%define osg_version  1.114
 %define vtag         %{osg_version}.igtf.%{igtf_version}
 
 Name:           igtf-ca-certs
@@ -60,6 +60,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Aug 07 2023 Matt Westphall <westphall@wisc.edu> - 1.123-1
+- Update to IGTF 1.123 (SOFTWARE-5677)
+
 * Mon Aug 07 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.122-1
 - Update to IGTF 1.122 (SOFTWARE-5643)
 
