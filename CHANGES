@@ -6,8 +6,18 @@ provided by the OSG security group, and hosted by the OSG GOC.
 If you are looking for previous listing of CHANGES that were made by
 the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
-OSG CA Package in new format (md5, sha1 hashs) to support openssl 1.x
+OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+
+===== Version 1.115 (IGTF 1.124) ===========
+Built 31 NOV 2023
+
+* updated contact meta-data for ArmeSFo authority (AM)
+* removed discontinued AEGIS authority (RS)
+* removed suspended KENET Root and issuing CAs (KE)
+* removed suspended SDG-G2 authority (CN)
+* removed suspended CNIC authority (CN)
+* removed all four discontinued DigitalTrust CAs operated by their issuer (AE)
 
 ===== Version 1.114 (IGTF 1.123) ===========
 Built 6 SEPT 2023
