@@ -7,7 +7,7 @@
 
 # Directory to modify certs in
 CERT_DIR=$1
-# File suffix to apply to unmodified sha1 certs
+# File suffix to apply to modified sha1 certs
 TRUST_SUFFIX=$2
 # File suffix to apply to modified sha1 certs
 ORIG_SUFFIX=$3
