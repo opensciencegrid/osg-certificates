@@ -15,7 +15,7 @@ ORIG_SUFFIX=$3
 # util function to find every sha1-signed cert
 find_sha1_certs() {
     for f in $(find $1 -name "*.pem"); do 
-        if openssl x509 -noout -text < $f | grep "Signature Algorithm.*sha1" > /dev/null; then 
+        if openssl x509 -noout -text < $f | grep -q "Signature Algorithm.*sha1"; then 
             echo $f
         fi
     done
