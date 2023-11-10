@@ -1,16 +1,17 @@
 %define igtf_version 1.124
 %define osg_version  1.115
-%define vtag         %{osg_version}.igtf.%{igtf_version}
+%define release_num  2
+%define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
-Release:        2%{?dist}
+Release:        %{release_num}%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
 URL:            http://repo.opensciencegrid.org/cadist/
 
-Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}-%{release}.tar.gz
+Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
 Source2:        https://github.com/opensciencegrid/letsencrypt-certificates/archive/v0.3.2/letsencrypt-certificates.tar.gz
 # can obtain latest letsencrypt-certificates.tar.gz with a github.source line:

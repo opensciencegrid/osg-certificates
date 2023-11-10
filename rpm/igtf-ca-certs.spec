@@ -1,10 +1,11 @@
 %define igtf_version 1.124
 %define osg_version  1.115
-%define vtag         %{osg_version}.igtf.%{igtf_version}
+%define release_num  2
+%define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
 Name:           igtf-ca-certs
 Version:        %{igtf_version}
-Release:        1%{?dist}
+Release:        %{release_num}%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
