@@ -2,6 +2,7 @@
 %define osg_version  1.116
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
+%define enable_trusted_sha1_certs 0
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
@@ -59,7 +60,14 @@ export CADIST=$PWD/certificates
 export PKG_NAME=%{name}
 
 ./build-certificates-dir.sh
+
+%if 0%{?enable_trusted_sha1_certs}
 ./add-trusted-sha1-certs.sh certificates trusted-cert java-cert
+%else
+# We still want to make the osg-ca-certs and osg-ca-certs-java RPMs
+find certificates -name "*.pem" -exec cp '{}' '{}.java-cert' ';'
+find certificates -name "*.pem" -exec mv '{}' '{}.trusted-cert' ';'
+%endif
 
 %install
 mkdir -p $RPM_BUILD_ROOT/etc/grid-security/certificates
