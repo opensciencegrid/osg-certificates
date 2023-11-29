@@ -1,6 +1,6 @@
-%define igtf_version 1.124
-%define osg_version  1.115
-%define release_num  2
+%define igtf_version 1.125
+%define osg_version  1.116
+%define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
 Name:           osg-ca-certs
@@ -84,6 +84,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %doc
 
 %changelog
+* Wed Nov 29 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.116-1
+- Update to IGTF 1.125; remove el9 cert changes (SOFTWARE-5764)
+
 * Thu Nov 9 2023 Matt Westphall <westphall@wisc.edu> - 1.115-2
 - Re-add el9 cert changes, create secondary package with original certs (SOFTWARE-5745)
 
