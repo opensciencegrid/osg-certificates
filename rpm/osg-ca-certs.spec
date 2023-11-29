@@ -1,6 +1,6 @@
 %define igtf_version 1.125
 %define osg_version  1.116
-%define release_num  1
+%define release_num  2
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
 
