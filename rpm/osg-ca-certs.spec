@@ -1,7 +1,8 @@
-%define igtf_version 1.124
-%define osg_version  1.115
-%define release_num  2
+%define igtf_version 1.125
+%define osg_version  1.116
+%define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
+%define enable_trusted_sha1_certs 0
 
 Name:           osg-ca-certs
 Version:        %{osg_version}
@@ -59,7 +60,14 @@ export CADIST=$PWD/certificates
 export PKG_NAME=%{name}
 
 ./build-certificates-dir.sh
+
+%if 0%{?enable_trusted_sha1_certs}
 ./add-trusted-sha1-certs.sh certificates trusted-cert java-cert
+%else
+# We still want to make the osg-ca-certs and osg-ca-certs-java RPMs
+find certificates -name "*.pem" -exec cp '{}' '{}.java-cert' ';'
+find certificates -name "*.pem" -exec mv '{}' '{}.trusted-cert' ';'
+%endif
 
 %install
 mkdir -p $RPM_BUILD_ROOT/etc/grid-security/certificates
@@ -84,6 +92,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %doc
 
 %changelog
+* Wed Nov 29 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.116-1
+- Update to IGTF 1.125; remove el9 cert changes (SOFTWARE-5764)
+
 * Thu Nov 9 2023 Matt Westphall <westphall@wisc.edu> - 1.115-2
 - Re-add el9 cert changes, create secondary package with original certs (SOFTWARE-5745)
 
