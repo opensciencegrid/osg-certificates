@@ -1,6 +1,6 @@
 %define igtf_version 1.125
 %define osg_version  1.116
-%define release_num  2
+%define release_num  3
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
 
@@ -45,6 +45,8 @@ For details about the current certificate release, see https://repo.openscienceg
 Summary: Java-compatible SHA1 certs for %{name}
 BuildArch: noarch
 Conflicts: osg-ca-scripts
+Provides:  grid-certificates = 7
+
 RemovePathPostfixes: .java-cert
 
 %description java
@@ -100,6 +102,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Thu Nov 30 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.116-3
+- Provide grid-certificates in osg-ca-certs-java (SOFTWARE-5764)
+
 * Wed Nov 29 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.116-2
 - Do not attempt to build osg-ca-certs-java on el7 (SOFTWARE-5764)
 
