@@ -1,6 +1,6 @@
-%define igtf_version 1.125
-%define osg_version  1.116
-%define release_num  3
+%define igtf_version 1.126
+%define osg_version  1.117
+%define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
 
@@ -36,6 +36,7 @@ Obsoletes:      osg-ca-certs-compat <= 1:1.37
 %if 0%{?rhel} >= 8
 RemovePathPostfixes: .trusted-cert
 %endif
+
 
 %description
 For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
@@ -102,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Wed Jan 3 2024 Matt Westphall <westphall@wisc.edu> - 1.117-1
+- Update to IGTF 1.126 (SOFTWARE-5790)
+
 * Thu Nov 30 2023 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.116-3
 - Provide grid-certificates in osg-ca-certs-java (SOFTWARE-5764)
 

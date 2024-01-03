@@ -8,6 +8,11 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+===== Version 1.117 (IGTF 1.126) ===========
+Built 3 JAN 2024
+
+* removed replaced InCommon IGTF Server CA and associated Comodo RSA CA (US)
+* removed discontinued UNLPGrid CA (CL)
 
 ===== Version 1.116 (IGTF 1.125) ===========
 Built 29 NOV 2023
