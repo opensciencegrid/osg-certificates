@@ -8,6 +8,13 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+===== Version 1.118 (IGTF 1.127) ===========
+Built 20 FEB 2024
+
+* added supplementary issuing CA Issuing CA IGTF - C5 - 1 for eMudhra (IN)
+* removed discontinued QuoVadis CAs QuoVadis-Grid-ICA-G2 QuoVadis-Root-CA2G3
+  QuoVadis-Root-CA2 and QuoVadis-Root-CA3G3 (BM)
+
 ===== Version 1.117 (IGTF 1.126) ===========
 Built 3 JAN 2024
 
