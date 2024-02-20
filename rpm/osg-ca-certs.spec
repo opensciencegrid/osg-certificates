@@ -30,8 +30,8 @@ Provides:       grid-certificates = 7
 
 Conflicts:      osg-ca-scripts
 
-Obsoletes:      vdt-ca-certs
-Obsoletes:      osg-ca-certs-experimental
+Obsoletes:      vdt-ca-certs < 1.23
+Obsoletes:      osg-ca-certs-experimental < 1.23
 Obsoletes:      osg-ca-certs-compat <= 1:1.37
 %if 0%{?rhel} >= 8
 RemovePathPostfixes: .trusted-cert
@@ -105,6 +105,7 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %changelog
 * Tue Feb 20 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.118-1
 - Update to IGTF 1.127 (SOFTWARE-5828)
+- Add version clauses to Obsoletes
 
 * Wed Jan 3 2024 Matt Westphall <westphall@wisc.edu> - 1.117-1
 - Update to IGTF 1.126 (SOFTWARE-5790)

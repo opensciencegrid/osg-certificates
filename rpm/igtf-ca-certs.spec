@@ -26,8 +26,8 @@ Provides:       grid-certificates = 7
 
 Conflicts:      osg-ca-scripts
 
-Obsoletes:      vdt-ca-certs
-Obsoletes:      igtf-ca-certs-experimental
+Obsoletes:      vdt-ca-certs < 1.41
+Obsoletes:      igtf-ca-certs-experimental < 1.41
 Obsoletes:      igtf-ca-certs-compat <= 1.55
 
 %description
@@ -63,6 +63,7 @@ sha256sum -c cacerts_sha256sum.txt
 %changelog
 * Tue Feb 20 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.127-1
 - Update to IGTF 1.127 (SOFTWARE-5828)
+- Add version clauses to Obsoletes
 
 * Wed Jan 3 2024 Matt Westphall <westphall@wisc.edu> - 1.126-1
 - Update to IGTF 1.126 (SOFTWARE-5790)
