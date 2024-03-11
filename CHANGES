@@ -8,6 +8,11 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+===== Version 1.119 (IGTF 1.128) ===========
+Built 11 MAR 2024
+
+* updated CRL download URL for ArmeSFo (AM)
+
 ===== Version 1.118 (IGTF 1.127) ===========
 Built 20 FEB 2024
 

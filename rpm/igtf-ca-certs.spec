@@ -1,5 +1,5 @@
-%define igtf_version 1.127
-%define osg_version  1.118
+%define igtf_version 1.128
+%define osg_version  1.119
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Mar 11 2024 Matt Westphall <westphall@wisc.edu> - 1.128-1
+- Update to IGTF 1.128 (SOFTWARE-5838)
+
 * Tue Feb 20 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.127-1
 - Update to IGTF 1.127 (SOFTWARE-5828)
 - Add version clauses to Obsoletes
