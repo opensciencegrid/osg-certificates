@@ -8,6 +8,16 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+
+===== Version 1.120 (IGTF 1.129) ===========
+Built 24 JUN 2024
+
+* updated CRL URL location for MREN CA (ME)
+* removed discontinued TSU-GE GRENA CA (GE)
+* removed suspended BYGCA (BY)
+* removed discontinued LIP CA (PT)
+* removed obsolete DT transitional CAs (AE)
+
 ===== Version 1.119 (IGTF 1.128) ===========
 Built 11 MAR 2024
 
