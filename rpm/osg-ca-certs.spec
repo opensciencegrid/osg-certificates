@@ -1,5 +1,5 @@
 %define igtf_version 1.129
-%define osg_version  1.120
+%define osg_version  1.121
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -14,7 +14,7 @@ URL:            http://repo.opensciencegrid.org/cadist/
 
 Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
-Source2:        https://github.com/opensciencegrid/letsencrypt-certificates/archive/v0.3.2/letsencrypt-certificates.tar.gz
+Source2:        letsencrypt-certificates.tar.gz
 # can obtain latest letsencrypt-certificates.tar.gz with a github.source line:
 # type=github repo=cilogon/letsencrypt-certificates tarball=letsencrypt-certificates.tar.gz tag=master hash=...
 
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Wed Jun 26 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.121-1
+- Add second Let's Encrypt root CA and new intermediate CAs (SOFTWARE-5920)
+
 * Mon Jun 24 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.120-1
 - Update to IGTF 1.129 (SOFTWARE-5913)
 
