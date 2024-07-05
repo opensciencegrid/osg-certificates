@@ -9,6 +9,14 @@ the VDT, then please refer to this link:
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
 
+===== Version 1.130 (IGTF 1.130) ===========
+Built 5 JUL 2024
+
+Note: The version of the OSG CA certs distribution will start following of
+the IGTF CA certs distribution it is based on.
+
+* resolve subjectDN nameformat compatibility issues trust anchor metadata
+
 ===== Version 1.120 (IGTF 1.129) ===========
 Built 24 JUN 2024
 

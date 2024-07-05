@@ -1,5 +1,5 @@
-%define igtf_version 1.129
-%define osg_version  1.120
+%define igtf_version 1.130
+%define osg_version  1.130
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Fri Jul 05 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.130-1
+- Update to IGTF 1.130 (SOFTWARE-5923)
+
 * Mon Jun 24 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.129-1
 - Update to IGTF 1.129 (SOFTWARE-5913)
 

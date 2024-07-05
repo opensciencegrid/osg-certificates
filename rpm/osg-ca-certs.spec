@@ -1,5 +1,5 @@
-%define igtf_version 1.129
-%define osg_version  1.121
+%define igtf_version 1.130
+%define osg_version  1.130
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Fri Jul 05 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.130-1
+- Update to IGTF 1.130 (SOFTWARE-5923)
+
 * Wed Jun 26 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.121-1
 - Add second Let's Encrypt root CA and new intermediate CAs (SOFTWARE-5920)
 
