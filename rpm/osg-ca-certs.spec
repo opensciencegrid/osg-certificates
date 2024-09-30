@@ -1,5 +1,5 @@
-%define igtf_version 1.130
-%define osg_version  1.130
+%define igtf_version 1.131
+%define osg_version  1.131
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Mon Sep 30 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.131-1
+- Update to IGTF 1.131 (SOFTWARE-6002)
+
 * Fri Jul 05 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.130-1
 - Update to IGTF 1.130 (SOFTWARE-5923)
 
