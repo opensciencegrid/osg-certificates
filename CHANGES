@@ -9,6 +9,12 @@ the VDT, then please refer to this link:
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
 
+===== Version 1.131 (IGTF 1.131) ===========
+Built 30 SEP 2024
+
+* removed discontinued HKU-CA-2 authority (HK)
+* removed obsolete 3rd generation TCS intermediates (EU)
+
 ===== Version 1.130 (IGTF 1.130) ===========
 Built 5 JUL 2024
 
