@@ -1,5 +1,5 @@
-%define igtf_version 1.131
-%define osg_version  1.131
+%define igtf_version 1.132
+%define osg_version  1.132
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
