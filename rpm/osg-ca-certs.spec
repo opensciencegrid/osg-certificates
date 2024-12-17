@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Tue Dec 17 2024 Matt Westphall <westphall@wisc.edu> - 1.132-1
+- Update to IGTF 1.132 (SOFTWARE-6044)
+
 * Mon Sep 30 2024 Mátyás Selmeci <matyas@cs.wisc.edu> - 1.131-1
 - Update to IGTF 1.131 (SOFTWARE-6002)
 

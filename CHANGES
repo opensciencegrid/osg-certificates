@@ -9,6 +9,11 @@ the VDT, then please refer to this link:
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
 
+===== Version 1.132 (IGTF 1.132) ===========
+Built 17 DEC 2024
+
+* added new trust anchor for TRGRID transition (TR) 
+
 ===== Version 1.131 (IGTF 1.131) ===========
 Built 30 SEP 2024
 
