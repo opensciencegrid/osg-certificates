@@ -8,6 +8,15 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.132 to 1.133
+---------------------------
+Built 25 FEB 2025
+
+* Updated re-issued GridCanada root with extended validity period (CA)
+* Added GEANT TCS Generation 5 TLS and Auth ICAs and corresponding HARICA 
+  and private trust roots (EU)
+* updated SHA-256 root CA for RDIG mitigating EL9/FedoraCore deprication
+* MARGI put on hold due to domainname resolution issues (MK)
 
 ===== Version 1.132 (IGTF 1.132) ===========
 Built 17 DEC 2024
