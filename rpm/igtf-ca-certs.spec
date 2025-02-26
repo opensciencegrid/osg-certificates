@@ -1,5 +1,5 @@
-%define igtf_version 1.132
-%define osg_version  1.132
+%define igtf_version 1.133
+%define osg_version  1.133
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Tue Feb 25 2025 Matt Westphall <westphall@wisc.edu> - 1.133-1
+- Update to IGTF 1.133 (SOFTWARE-6095)
+
 * Tue Dec 17 2024 Matt Westphall <westphall@wisc.edu> - 1.132-1
 - Update to IGTF 1.132 (SOFTWARE-6044)
 
