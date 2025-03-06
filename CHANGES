@@ -8,6 +8,13 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.133 to 1.134
+---------------------------
+Build 6 MAR 2025
+
+* New ANSPGrid CA 2 roll-over for root-issuer key pair (BR)
+* Withdrawn discontinued AC-GRID-FR series authorities (FR)
+
 Changes from 1.132 to 1.133
 ---------------------------
 Built 25 FEB 2025
