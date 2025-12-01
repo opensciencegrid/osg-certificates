@@ -8,9 +8,18 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.137 to 1.138
+---------------------------
+Built 1 DEC 2025
+
+* Add new REUNA Issuing CA and updated RPDNC for HLCA emSign Trusted Root (CL)
+* Withdraw superseded KEK CA (JP)
+* Update RCauth Pilot ICA G1 with extended validity period (EU)
+
+
 Changes from 1.136 to 1.137
 ---------------------------
-Build 15 SEP 2025
+Built 15 SEP 2025
 
 * Added accredited KEK-2024 classic issuing CA (JP)
 * Withdrawn superseded TRGrid CA 2005 (TR)
@@ -18,7 +27,7 @@ Build 15 SEP 2025
 
 Changes from 1.135 to 1.136
 ---------------------------
-Build 9 JUNE 2025
+Built 9 JUNE 2025
 
 * Added new CESNET CA Gen5 hierarchy and new off-line Root 2 (CZ)
 * Withdrawn retired CILogon CAs cilogon-basic and cilogon-silver (US)
@@ -29,7 +38,7 @@ Build 9 JUNE 2025
 
 Changes from 1.134 to 1.135
 ---------------------------
-Build 7 MAY 2025
+Built 7 MAY 2025
 
 * Updated SlovakGrid trust anchor with extended validity (SK)
 * Withdrawn discontinued HPCI CA (JP)
@@ -50,7 +59,7 @@ NOTE: the _default_ package signing key has changed to the 4th generation
 
 Changes from 1.133 to 1.134
 ---------------------------
-Build 6 MAR 2025
+Built 6 MAR 2025
 
 * New ANSPGrid CA 2 roll-over for root-issuer key pair (BR)
 * Withdrawn discontinued AC-GRID-FR series authorities (FR)

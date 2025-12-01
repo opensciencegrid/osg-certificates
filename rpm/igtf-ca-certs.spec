@@ -1,5 +1,5 @@
-%define igtf_version 1.137
-%define osg_version  1.137
+%define igtf_version 1.138
+%define osg_version  1.138
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -9,7 +9,7 @@ Release:        %{release_num}%{?dist}
 Summary:        OSG Packaging of the IGTF CA Certs, in the OpenSSL 1.0.* format. 
 
 License:        Unknown
-URL:            http://repo.opensciencegrid.org/cadist/
+URL:            http://repo.osg-htc.org/cadist/
 
 Source0:        https://github.com/opensciencegrid/osg-certificates/archive/v%{vtag}/osg-certificates-%{vtag}.tar.gz
 Source1:        https://dist.eugridpma.info/distribution/igtf/current/igtf-policy-installation-bundle-%{igtf_version}.tar.gz
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Dec 01 2025 Mátyás Selmeci <mselmeci@wisc.edu> - 1.138-1
+- Update to IGTF 1.138 (SOFTWARE-6263)
+
 * Mon Sep 15 2025 Matt Westphall <westphall@wisc.edu> - 1.137-1
 - Update to IGTF 1.137 (SOFTWARE-6214)
 
