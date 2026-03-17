@@ -8,6 +8,14 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.138 to 1.139
+---------------------------
+Built 17 MAR 2026
+
+* Update ArmeSFo CA re-issued based on SHA-2 family digest (AM)
+* The IGTF DCVOTA assurance profile has been added. For details, please refer
+  to https://www.igtf.net/ap/dcvota/
+
 Changes from 1.137 to 1.138
 ---------------------------
 Built 1 DEC 2025
