@@ -1,5 +1,5 @@
-%define igtf_version 1.139
-%define osg_version  1.139
+%define igtf_version 1.140
+%define osg_version  1.140
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -7,7 +7,7 @@
 Name:           osg-ca-certs
 Version:        %{osg_version}
 Release:        %{release_num}%{?dist}
-Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format. 
+Summary:        OSG Packaging of the IGTF CA Certs and OSG-specific CAs, in the OpenSSL 1.0.* format.
 
 License:        Unknown
 URL:            http://repo.osg-htc.org/cadist/
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Mon Mar 30 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.140-1
+- Update to IGTF 1.140 (SOFTWARE-6322)
+
 * Tue Mar 17 2026 Matt Westphall <westphall@wisc.edu> - 1.139-1
 - Update to IGTF 1.139 (SOFTWARE-6311)
 

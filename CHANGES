@@ -8,6 +8,17 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.139 to 1.140
+---------------------------
+Built 30 MAR 2026
+
+* Added server TLS specific trust hierarchy for eMudhra join trust (IN)
+* Deprecates SSLeay and OpenSSL 0.x series subject name hashes in the
+  trust anchor directory (i.e. based on the MD5 encoding of the
+  binary encoding of the subject distinguished name).
+  These will be removed after August 2026.
+
+
 Changes from 1.138 to 1.139
 ---------------------------
 Built 17 MAR 2026

@@ -1,12 +1,12 @@
-%define igtf_version 1.139
-%define osg_version  1.139
+%define igtf_version 1.140
+%define osg_version  1.140
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
 Name:           igtf-ca-certs
 Version:        %{igtf_version}
 Release:        %{release_num}%{?dist}
-Summary:        OSG Packaging of the IGTF CA Certs, in the OpenSSL 1.0.* format. 
+Summary:        OSG Packaging of the IGTF CA Certs, in the OpenSSL 1.0.* format.
 
 License:        Unknown
 URL:            http://repo.osg-htc.org/cadist/
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Mon Mar 30 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.140-1
+- Update to IGTF 1.140 (SOFTWARE-6322)
+
 * Tue Mar 17 2026 Matt Westphall <westphall@wisc.edu> - 1.139-1
 - Update to IGTF 1.139 (SOFTWARE-6311)
 
