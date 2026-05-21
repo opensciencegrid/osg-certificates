@@ -1,5 +1,5 @@
-%define igtf_version 1.140
-%define osg_version  1.140
+%define igtf_version 1.141
+%define osg_version  1.141
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Thu May 21 2026 Matt Westphall <westphall@wisc.edu> - 1.141-1
+- Update to IGTF 1.141 (SOFTWARE-6349)
+
 * Mon Mar 30 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.140-1
 - Update to IGTF 1.140 (SOFTWARE-6322)
 
@@ -514,4 +517,3 @@ Fix conflicts line.
 
 * Mon Aug 15 2011 Brian Bockelman <bbockelm@cse.unl.edu> - 1.20-1
 - Initial version, based on osg-ca-certs spec file.
-
