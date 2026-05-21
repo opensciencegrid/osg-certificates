@@ -1,5 +1,5 @@
-%define igtf_version 1.140
-%define osg_version  1.140
+%define igtf_version 1.141
+%define osg_version  1.141
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Thu May 21 2026 Matt Westphall <westphall@wisc.edu> - 1.141-1
+- Update to IGTF 1.141 (SOFTWARE-6349)
+
 * Mon Mar 30 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.140-1
 - Update to IGTF 1.140 (SOFTWARE-6322)
 
@@ -433,4 +436,3 @@ Fix conflicts line.
 
 * Mon Aug 15 2011 Brian Bockelman <bbockelm@cse.unl.edu> - 1.40-1
 - Initial packaging of the IGTF CA certs (new format) from OSG.
-
