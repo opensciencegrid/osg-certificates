@@ -1,5 +1,5 @@
-%define igtf_version 1.141
-%define osg_version  1.141
+%define igtf_version 1.143
+%define osg_version  1.143
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -103,6 +103,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Tue Jun 23 2026 Matt Westphall <westphall@wisc.edu> - 1.143-1
+- Update to IGTF 1.143 (SOFTWARE-6360)
+
 * Thu May 21 2026 Matt Westphall <westphall@wisc.edu> - 1.141-1
 - Update to IGTF 1.141 (SOFTWARE-6349)
 

@@ -8,6 +8,20 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+Changes from 1.141 to 1.143
+---------------------------
+Built 23 June 2026
+
+* Replaced trust anchor for DZeScience authority by DZeScience G2 (DZ)
+* Added new InCommon Gen 4 issuing authority and updated HLCA (US)
+
+Changes from 1.141 to 1.142
+---------------------------
+Built 23 June 2026
+
+* Added new InCommon Gen 4 issuing authority and updated HLCA (US)
+
+
 Changes from 1.140 to 1.141 
 --------------------------- 
 Built 21 May 2026
