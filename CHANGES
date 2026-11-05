@@ -8,6 +8,23 @@ the VDT, then please refer to this link:
    http://vdt.cs.wisc.edu/releases/certs/ca_changes.txt
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
+
+Changes from 1.146 to 1.147
+---------------------------
+Built 5 November 2026
+
+* Add new CERN Root CA 3 and Grid CA 2 ICA (CERN)
+* Updated DFN-GridGermany-Root with new SHA-2 family self-signature (DE)
+* Removed discontinued DigiCert roots and ICAs from TAGPMA:
+  DigiCertGridRootCA-Root, DigiCertGridTrustCAG2-Classic,
+  DigiCertGridCA-1G2-Classic-2015, DigiCertAssuredIDRootCA-Root,
+  DigiCert-Assured-ID-Grid-Client-RSA2048-SHA256-2022-CA1,
+  DigiCert-Assured-ID-Grid-TLS-RSA2048-SHA256-2022-CA1 (US)
+* Removed obsolete TCS Gen4 and Gen4B issuing CAs, as well as the Gen4B
+  private trust roots and USERTrustECCCertificationAuthority (EU)
+  Due to the dependency of the (outgoing) InCommon-RSA-IGTF-Server-CA-3, the
+  USERTrustRSACertificationAuthority is temporarily retained (US)
+
 Changes from 1.145 to 1.146
 ---------------------------
 Built 2 Sep 2026

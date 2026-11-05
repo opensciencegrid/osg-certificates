@@ -1,5 +1,5 @@
-%define igtf_version 1.146
-%define osg_version  1.146
+%define igtf_version 1.147
+%define osg_version  1.147
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 
@@ -31,7 +31,7 @@ Obsoletes:      igtf-ca-certs-experimental < 1.41
 Obsoletes:      igtf-ca-certs-compat <= 1.55
 
 %description
-For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
+For details about the current certificate release, see https://repo.osg-htc.org/cadist/ and change log at https://repo.osg-htc.org/cadist/CHANGES.
 
 %prep
 %setup    -n osg-certificates-%{vtag}
@@ -61,6 +61,9 @@ sha256sum -c cacerts_sha256sum.txt
 %doc
 
 %changelog
+* Thu Nov 05 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.147-1
+- Update to IGTF 1.147 (SOFTWARE-6447)
+
 * Wed Sep 02 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.146-1
 - Update to IGTF 1.146 (SOFTWARE-6417)
 

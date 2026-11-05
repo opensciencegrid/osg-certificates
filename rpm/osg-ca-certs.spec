@@ -1,5 +1,5 @@
-%define igtf_version 1.146
-%define osg_version  1.146
+%define igtf_version 1.147
+%define osg_version  1.147
 %define release_num  1
 %define vtag         %{osg_version}.igtf.%{igtf_version}-%{release_num}
 %define enable_trusted_sha1_certs 0
@@ -36,7 +36,7 @@ RemovePathPostfixes: .trusted-cert
 
 
 %description
-For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
+For details about the current certificate release, see https://repo.osg-htc.org/cadist/ and change log at https://repo.osg-htc.org/cadist/CHANGES.
 
 %if 0%{?rhel} >= 8
 %package java
@@ -48,7 +48,7 @@ Provides:  grid-certificates = 7
 RemovePathPostfixes: .java-cert
 
 %description java
-For details about the current certificate release, see https://repo.opensciencegrid.org/cadist/ and change log at https://repo.opensciencegrid.org/cadist/CHANGES.
+For details about the current certificate release, see https://repo.osg-htc.org/cadist/ and change log at https://repo.osg-htc.org/cadist/CHANGES.
 %endif
 
 %prep
@@ -99,6 +99,9 @@ mv certificates/* $RPM_BUILD_ROOT/etc/grid-security/certificates/
 %endif
 
 %changelog
+* Thu Nov 05 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.147-1
+- Update to IGTF 1.147 (SOFTWARE-6447)
+
 * Wed Sep 02 2026 Mátyás Selmeci <mselmeci@wisc.edu> - 1.146-1
 - Update to IGTF 1.146 (SOFTWARE-6417)
 
