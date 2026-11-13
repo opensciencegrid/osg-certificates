@@ -9,6 +9,13 @@ the VDT, then please refer to this link:
 OSG CA Package in new format (md5, sha1 hashes) to support openssl 1.x
 
 
+Changes from 1.147 to 1.148
+---------------------------
+(13 November 2026)
+
+* Added InCommon (DC=org,DC=incommon) RPDNC namespace also to emigtfc5r1 (US)
+  [this is part one of a two-step transitioning process for CertiNext/InCommon]
+
 Changes from 1.146 to 1.147
 ---------------------------
 Built 5 November 2026
